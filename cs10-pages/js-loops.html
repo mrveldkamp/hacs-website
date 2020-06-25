@@ -1,0 +1,183 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Loops</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Introduction</h3>
+    <p>Loops are used to <strong>repeat code</strong>. Two common loops in JavaScript are the <strong>while loop</strong> and the <strong>for loop</strong>.</p>
+    <hr>
+
+    <h3>While Loop</h3>
+    <p>The code inside a while loop will repeatedly execute as long as the condition is true.</p>
+    <pre><code class="lang-js">
+    while (condition) {
+      // Code block 
+      // to be 
+      // executed.
+    }
+    </code></pre>
+
+    <p><em>Example: Log the numbers 1 to 100 to the console...</em></p>
+    <pre><code class="lang-js">
+    let num = 1;
+    while (num <= 100) {
+      console.log(num);
+      num++;
+    }
+    </code></pre>
+    <hr>
+
+    <h3>For Loop</h3>
+    <p>The code inside a for loop will repeatedly execute as long as the condition is true.  The flow of control of a for loop is as follows:</p>
+    <ol>
+      <li>execute <strong>init</strong> statement (often used to <em>initialize</em> variables)...</li>
+      <li>test <strong>condition</strong>...</li>
+      <li>if test condition is true, execute <strong>loop body</strong>...</li>
+      <li>execute <strong>update</strong> statement (often used to <em>update</em> variables)...</li>
+      <li>repeat 2 - 4 until test condition is false...</li>
+    </ol>
+    <pre><code class="lang-js">
+    for (init; condition; update) {
+      // Code block 
+      // to be 
+      // executed.
+    }
+    </code></pre>
+    <p><em>Example: Log the numbers 1 to 100 to the console...</em></p>
+    <pre><code class="lang-js">
+    for (let num = 1; num <= 100; num++) {
+      console.log(num);
+    }
+    </code></pre>
+    <hr>
+
+    <h3>Repeat Code</h3>
+    <p>Loops may be used to repeat code:</p>
+    <ul>
+      <li>a set number of times,</li>
+      <li>or an unknown number of times.</li>
+    </ul>
+    <hr>
+
+    <p>For Loops often work best when repeating code a set number of times:</p>
+    <p><em>Example: Simulate flipping a coin 500 times</em></p>
+    <pre><code class="lang-js">
+    // Coin Flip Simulator
+    let numHeads = 0;
+    let numTails = 0
+    let randNum;
+
+    // Loop 500 times
+    for (let n = 0; n < 500; n++) {
+      // Simulate Coin Flip 50/50 chance
+      randNum = Math.random();
+      if (randNum < 0.5) {
+        numHeads++;
+      } else {
+        numTails++;
+      }
+    }
+
+    // Output Final Results
+    console.log("Heads: " + numHeads + " Tails: " + numTails);
+    </code></pre>
+    <hr>
+
+    <p>While loops often work best when repeating code an unknown number of times.</p>
+    <p><em>Example: Simulate flipping a coin until 100 heads.</em></p>
+    <pre><code class="lang-js">
+      // Coin Flip Simulator
+      let numHeads = 0;
+      let numTails = 0
+      let randNum;
+  
+      // Loop until 100 heads
+      while (numHeads < 100) {
+        // Simulate Coin Flip 50/50 chance
+        randNum = Math.random();
+        if (randNum < 0.5) {
+          numHeads++;
+        } else {
+          numTails++;
+        }
+      }
+  
+      // Output Final Results
+      console.log("Heads: " + numHeads + " Tails: " + numTails);
+      </code></pre>
+      <hr>
+
+      <h3>Nested Loops</h3>
+      <p>Loops may be nested inside of other loops...</p>
+      <pre><code class="lang-js">
+      // Outer Loop
+      for (init1; condition1; update1) {
+        // Inner Loop
+        for (init2; condition2; update2) {
+          ...
+          ...
+        }
+      }
+      </code></pre>
+
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Loops - Notes Explanation</h3>
+    <p>While Loops | For Loops | Loop Known or Unknown # of times | Nested Loops</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xi4LCxFBMWo?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>Minecraft Fishing with Loops</h3>
+    <p>Add loops to Minecraft fishing simulator.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CIDaxPi9Ly8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div> <!-- video-lessons-->
+  
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Number Patterns Practice</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/numbers-foam-pile.jpg" width="300">
+      </div>
+      <div class="box2">
+        <p>Practice using for loops to generate patterns.</p>
+        <p>Instructions: <a href="https://drive.google.com/open?id=1vuEQmiE3FfzPvmJufVbXeWuO0oE7YGw0lL-8HPWBMrg"
+            target="_blank">Looping Exercises</a></p>
+      </div>
+    </div>
+    <hr>
+
+    <h3>Mario Kart Item Box Simulator with Loops</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/mario-kart-item-box-loops.png" width="300">
+      </div>
+      <div class="box2">
+        <p>Add loops to Mario Kart Item Box Simulator.</p>
+        <p>Instructions: <a href="https://drive.google.com/open?id=1VM_MAhyFiCuxooelINAVBQvAWcTnDw2TXvbFVfCdRCk"
+            target="_blank">Mario Kart Simulator with Loops</a></p>
+      </div>
+    </div>
+    <hr>
+
+  </div> <!-- assignments-->
+
+</div>

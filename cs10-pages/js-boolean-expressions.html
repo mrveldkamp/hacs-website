@@ -1,0 +1,117 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Boolean Expressions</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Boolean Data Type</h3>
+    <p>JavaScript has a <strong>Boolean Data Type</strong> that can be one of two possible values: <strong>true</strong>
+      or <strong>false</strong>.</p>
+    <div class="highlight-box">
+      Boolean Data Type = true or false
+    </div>
+    <hr>
+
+    <h3>Boolean Expressions</h3>
+    <p>Just as mathematical expressions evaluate to a Number data type, boolean expressions evaluate to a Boolean data type.</p>
+    <div class="highlight-box">
+      <strong>Boolean Expressions</strong> are expressions that evaluate to <strong>true</strong> or
+        <strong>false</strong>.
+    <pre><code class='lang-js'>
+    age < 18 // evaluates to true or false   
+    </code></pre>
+    </div>
+    <p>Just as mathematical expressions are made up of mathematical operators, boolean expressions are made up of <em>comparison and logical operators</em>.</p>
+    <hr>
+
+    <h3>Comparison Operators</h3>
+    <p>Comparison operators are used to build boolean expressions:</p>
+    <ul>
+      <li>Equal To: <strong>==</strong></li>
+      <li>Not Equal To: <strong>!=</strong></li>
+      <li>Greater Than: <strong>></strong></li>
+      <li>Greater Than or Equal To: <strong>>=</strong></li>
+      <li>Less Than: <strong>&lt;</strong></li>
+      <li>Less Than or Equal To: <strong>&lt;=</strong></li>
+    </ul>
+
+    <p style="font-style: italic;">Examples of Comparison Operators</p>
+    <pre><code class='lang-js'>
+    // Equal To (==)
+    5 == 8 evaluates to false
+    5 == 5 evaluates to true
+
+    // Not Equal (!=)
+    5 != 8 evaluates to true
+    8 != 8 evaluates to false
+
+    // Greater Than (>)
+    5 > 8 evaluates to false
+    12 > 8 evaluates to true
+
+    // Greater Than or Equal To (>=)
+    8 >= 8 evaluates to true
+    7 >= 8 evaluates to false
+
+    // Less Than (<)
+    5 < 8 evaluates to true
+    9 < 8 evaluates to false
+
+    // Less Than or Equal To (<=)
+    8 <= 8 evaluates to true
+    2 <= 8 evaluates to true
+    </code></pre>
+    <hr>
+
+    <h3>Logical Operators</h3>
+    <p>Logical Operators allow you to build more complex boolean expressions by connecting boolean expressions:</p>
+    <ul>
+      <li>Logical And: <strong>&&</strong></li>
+      <li>Logical Or: <strong>||</strong></li>
+      <li>Logical Not: <strong>!</strong></li>
+    </ul>
+
+    <p style="font-style: italic;">Examples of Logical Operators</p>
+    <pre><code class='lang-js'>
+    // And (&&) is true if all connected boolean expressions are true
+    5 < 8 && 20 > 10 evaluates to true
+    5 < 2 && 20 > 10 evaluates to false
+
+    // Or (||) is true if at least one of the connected boolean expressions is true
+    5 < 2 || 20 > 10 evaluates to true
+    5 < 2 || 7 > 10 evaluates to false
+    1 < 2 || 20 > 10 evaluates to true
+
+    // Not (!) changes true to false and false to true
+    !(3 < 5) evaluates to false
+    </code></pre>
+    <hr>
+
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Boolean Expressions - Notes Explanation</h3>
+    <p>Boolean Data Type / Expressions; Comparison & Logical Operators</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3h8-1448gP8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div> <!-- video-lessons-->
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Assignment Title</h3>
+  </div> <!-- assignments-->
+
+</div>

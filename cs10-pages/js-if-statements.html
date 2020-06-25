@@ -1,0 +1,180 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>If Statements</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Selection Control Structure</h3>
+    <p><strong>If statements</strong> are a type of selection control structure. They allow you to control / select what
+      code to execute.</p>
+    <hr>
+
+    <h3>Binary Selection</h3>
+    <p>Select one of two paths...</p>
+    <pre><code class='lang-js'>
+    if (boolean_expression) {
+      console.log('boolean_expression is true');
+    } else {
+      console.log('boolean_expression is false');
+    }
+    </code></pre>
+    <hr>
+
+    <h3>Unary Selection</h3>
+    <p>Select path or not...</p>
+    <pre><code class='lang-js'>
+    if (boolean_expression) {
+      console.log('boolean_expression is true');
+    } 
+    </code></pre>
+    <hr>
+
+    <h3>Chained Selection</h3>
+    <p>Select one of multiple paths...</p>
+    <pre><code class='lang-js'>
+    if (boolean_expression_1) {
+      console.log('boolean_expression_1 is true');
+    } else if (boolean_expression_2) {
+      console.log('boolean_expression_2 is true');
+    } else if (boolean_expression_3) {
+      console.log('boolean_expression_3 is true');
+    } else {
+      console.log('All boolean_expressions are false');
+    }
+
+    // Note: insert as many else if conditions as needed.
+    </code></pre>
+    <hr>
+
+    <h3>Chained Selection without Else</h3>
+    <p>Select one or none of multiple paths...</p>
+    <pre><code class='lang-js'>
+    if (boolean_expression_1) {
+      console.log('boolean_expression_1 is true');
+    } else if (boolean_expression_2) {
+      console.log('boolean_expression_2 is true');
+    } else if (boolean_expression_3) {
+      console.log('boolean_expression_3 is true');
+    } 
+
+    // Note: insert as many else if conditions as needed.
+    </code></pre>
+    <hr>
+
+    <h3>Nested If Statements</h3>
+    <p>If statements may be nested inside of other if statements.</p>
+    <pre><code class='lang-js'>
+    // Outer Binary If Statement
+    if (boolean_expression_1) {
+      // Inner Binary If Statement
+      if (boolean_expression_2) {
+        console.log('1 true, 2 true');
+      } else {
+        console.log('1 true, 2 false');
+      }
+    } else {
+      // Inner Chained If Statement
+      if (boolean_expression_3) {
+        console.log('1 false, 3 true');
+      } else if (boolean_expression_4) {
+        console.log('1 false, 3 false, 4 true');
+      } else {
+        console.log('1 false, 3 false, 4 false');
+      }
+    }
+    </code></pre>
+    <hr>
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>If Statements - Notes Explanation</h3>
+    <p>Introduction to Binary, Unary, Chained and Nested Selection Statements</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xKlanNWkqAU?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>Kung Fu Panda Character Look Up</h3>
+    <p>Update character based on user input.</p>
+    <p>Start Code: <a href="https://github.com/mrveldkamp/js-kfpanda-look-up-start.git"
+        target='_blank'>js-kfpanda-look-up-start.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QT2n7tdr30w?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ab4z64PEmTM?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>Map Analyzer Example</h3>
+    <p>If Statements Practice</p>
+    <p>Start Code: <a href="https://github.com/mrveldkamp/js-map-analyzer.git" target='_blank'>js-map-analyzer.git</a>
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lSaB0S543HM?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div> <!-- video-lessons-->
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Map Analyzer Assignment</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/map-analyzer-asgn.PNG" width="300">
+      </div>
+      <div class="box2">
+        <p>I did the first three levels of the Map Analyzer Assignment in the Video Lessons... you can complete the
+          rest!</p>
+      </div>
+    </div>
+    <hr>
+
+    <h3>User Login Assignment</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/user-login-asgn.PNG" width="300">
+      </div>
+      <div class="box2">
+        <p>Implement a basic User Login using a JavaScript if statement.</p>
+        <p><strong>Instructions: </strong><a
+            href="https://drive.google.com/open?id=1GdVzOxbiL_zBn2IpORXHHhaIRaK-U8YpIOB_c47DvhE" target="_blank">User
+            Login Assignment</a></p>
+        <hr>
+        <p><em>Video Solution (YouTube Playlist): </em><a
+            href="https://www.youtube.com/playlist?list=PLVrsNRbJzKu_sSpfrGLgVQ0Y-lm9LOOGG"
+            target="_blank">User-Login-Asgn-Solution</a></p>
+      </div>
+    </div>
+    <hr>
+
+    <h3>Create-a-Quiz Assignment</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/quiz-asgn.png" width="300">
+      </div>
+      <div class="box2">
+        <p>Create an interactive quiz on a topic of your choice.</p>
+        <p><strong>Instructions: </strong><a
+            href="https://drive.google.com/open?id=15UHZWmhGRGTAGCO_L3U1byrhhC9tyy0GEreFprvcnM0"
+            target="_blank">Create-a-Quiz Assignment</a></p>
+      </div>
+    </div>
+    <hr>
+
+
+
+  </div> <!-- assignments-->
+
+</div>

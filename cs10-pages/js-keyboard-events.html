@@ -1,0 +1,53 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Keyboard Events</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>What Key was That?</h3>
+    <p>Event listeners will send information about an event to the specified event function.  This data can be stored and accessed by an event variable that is declared inside of the event function header.</p>
+    <p>For key events, the data that is sent from the event listener includes an <code class='lang-js'>event.keyCode</code> property that stores the key code of the key that was pressed <em>(eg. A key code of 32 is the 'Space Bar')</em>.</p>
+
+    <p>To test the key code for a specific key, simply log the <code class='lang-js'>event.keyCode</code> to the console:</p>
+    <pre><code class='lang-js'>
+    // Event Listener
+    document.addEventListener('keydown', keydownHandler);
+
+    // Event Function
+    function keydownHandler(event) {
+      console.log(event.keyCode);
+    }
+    </code></pre>
+    <hr>
+
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Drum Kit</h3>
+    <p>Use If Statements to test Key Events</p>
+    <p>Start Code: <a href="https://github.com/mrveldkamp/js-drum-kit.git" target='_blank'>js-drum-kit.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/03rOaM2jcqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/q9W_-92pMLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div> <!-- video-lessons-->
+  
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Assignment Title</h3>
+  </div> <!-- assignments-->
+
+</div>

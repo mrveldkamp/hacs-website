@@ -1,0 +1,79 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Events & Functions</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Code on Demand</h3>
+    <p>In JavaScript, code may be executed on demand by using <strong>Functions</strong> and <strong>Event
+        Listeners</strong>.</p>
+    <hr>
+
+    <h3>Functions</h3>
+    <p>A function may be thought of as a block of code. The code stored inside of a function will not execute until the
+      function is invoked / called <em>(ie. told to do its job!)</em>.</p>
+    <em>main.js</em>
+    <pre><code class="lang-js">
+    // Define a function that stores code
+    function greeting() {
+      alert('Hello Functions');
+      alert('I am inside of a function.');
+    }
+    </code></pre>
+
+    <p>The name of the function can be anything, but should represent the task of the function.</p>
+    <p>Function names generally start with a lowercase letter and may include lower and upper case letters, numbers and
+      underscores.</p>
+    <hr>
+
+    <h3>Event Listeners</h3>
+    <p>Event listeners may be added to html elements. Event listeners will tell a specified function to do its job when
+      a certain event occurs.</p>
+
+    <em>main.js</em>
+    <pre><code class="lang-js">
+    // Run greeting function when document is clicked
+    document.addEventListener('click', greeting);
+    </code></pre>
+
+    <p>Types of events to listen for include:</p>
+    <ul>
+      <li>'click'</li>
+      <li>'dblclick'</li>
+      <li>'mousedown'</li>
+      <li>'mouseup'</li>
+      <li>'scroll'</li>
+      <li>'keydown'</li>
+      <li>'keyup'</li>
+      <li>...</li>
+    </ul>
+    <hr>
+  </div> <!-- .concept-notes -->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>JS Events & Functions - Notes Explanation</h3>
+    <p>Run code on command using Functions and Events.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8W7T4jgEqOY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div>
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Assignment Title</h3>
+  </div>
+
+</div>

@@ -1,0 +1,54 @@
+/* Style Sheet */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #09457e;
+}
+
+body {
+    width: 1200px;
+    margin: 20px auto;
+    padding: 20px 75px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+
+
+input {
+    width: 100%;
+}
+
+input, #task {
+    font-size: 1.15rem;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.html-display {
+    display: flex;
+    border-top: 2px solid grey;
+}
+
+.html-code {
+    margin-top: 30px;
+}
+
+.html-result {
+    padding-left: 40px;
+    border-left: 2px solid grey;
+}
+
+#img1 {
+    width: 250px;
+    height: 200px;
+}
+
+button {
+    background-color: #09457e;
+    color: white;
+    padding:5px 10px;
+    border: 1px solid #09457e;
+}

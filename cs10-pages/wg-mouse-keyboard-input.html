@@ -1,0 +1,209 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Mouse & Keyboard Input</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <!-- <div>Assignments</div> -->
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Mouse Is Pressed</h3>
+    <p>A boolean <em>mouseIsPressed</em> variable may be used to check if the mouse button is being held down.</p>
+    <pre><code class="lang-js">
+      let x = 100;
+      let mouseIsPressed = false;
+      
+      requestAnimationFrame(draw);
+      function draw() {
+          // UPDATE ELEMENTS ON CANVAS
+      
+          // Animate if mouse button is held down
+          if (mouseIsPressed) {
+              x++;
+          }
+      
+          // DRAW CANVAS
+          ctx.fillStyle = "white"
+          ctx.fillRect(0, 0, cnv.width, cnv.height); // Background
+      
+          ctx.fillStyle = "green";
+          ctx.fillRect(x, 100, 50, 50); // Rectangle
+      
+          // REQUEST ANIMATION FRAME
+          requestAnimationFrame(draw);
+      }
+      
+      // Event Listeners & Handlers
+      document.addEventListener("mousedown", mousedownHandler);
+      document.addEventListener("mouseup", mouseupHandler);
+      
+      function mousedownHandler() {
+          mouseIsPressed = true;
+      }
+      
+      function mouseupHandler() {
+          mouseIsPressed = false;
+      }
+    </code></pre>
+    <hr>
+
+    <h3>Mouse Coordinates</h3>
+    <p>It is possible to determine the coordinates of the mouse on the canvas by using the mouse coordinates on the document and the location of the canvas.</p>
+    <p><img src="cs10-pages/images/mouse-coordinates-sketch.PNG" alt="Mouse Coordinates Sketch"></p>
+    
+    <p>When a mouse event occurs, such as <em>mousemove</em>, the <em>event</em> parameter stores information about the mouse coordinates on the document:</p>
+    <ul>
+      <li><em>event.clientX</em>: the x-coordinate of mouse on document</li>
+      <li><em>event.clientY</em>: the y-coordinate of mouse on document</li>
+    </ul>
+    
+    <p>The <em>getBoundingClientRect()</em> method returns information about the location of the canvas:</p>
+    <ul>
+      <li><em>let cnvRect = cnv.getBoundingClientRect();</em></li>
+      <li><em>cnvRect.top</em>: distance canvas is from the top of the document</li>
+      <li><em>cnvRect.left</em>: distance canvas is from the left of the document</li>
+    </ul>
+
+    <pre><code class="lang-js">
+      let mouseX, mouseY;
+
+      requestAnimationFrame(draw);
+      function draw() {
+          // Background
+          ctx.fillStyle = "white"
+          ctx.fillRect(0, 0, cnv.width, cnv.height); 
+      
+          // Draw mouse coordinates at mouse location
+          ctx.font = "24px Arial";
+          ctx.fillStyle = "black";
+          let mouseCoordsStr = "(" + mouseX + "," + mouseY + ")";
+          ctx.fillText(mouseCoordsStr, mouseX, mouseY);
+      
+          // REQUEST ANIMATION FRAME
+          requestAnimationFrame(draw);
+      }
+      
+      // Event Listeners & Handlers
+      document.addEventListener("mousemove", mousemoveHandler);
+      
+      function mousemoveHandler(event) {
+          // Get rectangle info about canvas location
+          let cnvRect = cnv.getBoundingClientRect(); 
+      
+          // Calc mouse coordinates using mouse event and canvas location info
+          mouseX = Math.round(event.clientX - cnvRect.left);
+          mouseY = Math.round(event.clientY - cnvRect.top);
+      }
+    </code></pre>
+    <hr>
+
+    <h3>Animate While a Key Is Pressed</h3>
+    <p>To animate while a key is held down, set a boolean variable to true on a 'keydown' event and false on a 'keyup' event.  Use the boolean variable to control the animation. <em>(Note: Use 'event.code' to test specific keys)</em></p>
+    <pre><code class="lang-js">
+      let x = 100;
+      let keyIsPressed = false;
+      
+      requestAnimationFrame(draw);
+      function draw() {
+          // UPDATE ELEMENTS ON CANVAS
+      
+          // Animate if any key is held down
+          if (keyIsPressed) {
+              x++;
+          }
+      
+          // DRAW CANVAS
+          ctx.fillStyle = "white"
+          ctx.fillRect(0, 0, cnv.width, cnv.height); // Background
+      
+          ctx.fillStyle = "green";
+          ctx.fillRect(x, 100, 50, 50); // Rectangle
+      
+          // REQUEST ANIMATION FRAME
+          requestAnimationFrame(draw);
+      }
+      
+      // Event Listeners & Handlers
+      document.addEventListener("keydown", keydownHandler);
+      document.addEventListener("keyup", keyupHandler);
+      
+      function keydownHandler() {
+          keyIsPressed = true;
+      }
+      
+      function keyupHandler() {
+          keyIsPressed = false;
+      }
+    </code></pre>
+    <hr>
+
+    <h3>Toggle Animation on Key Press</h3>
+    <p>To toggle an animation means to switch it from 'on' to 'off' and vice-versa.  To do this on a key press, toggle a boolean variable from 'true' to 'false' and vice-versa on a 'keydown' event.</p>
+    <pre><code class="lang-js">
+      let x = 100;
+      let animate = false;
+      
+      requestAnimationFrame(draw);
+      function draw() {
+          // UPDATE ELEMENTS ON CANVAS
+      
+          // Control animaton with boolean variable
+          if (animate) {
+              x++;
+          }
+      
+          // DRAW CANVAS
+          ctx.fillStyle = "white"
+          ctx.fillRect(0, 0, cnv.width, cnv.height); // Background
+      
+          ctx.fillStyle = "green";
+          ctx.fillRect(x, 100, 50, 50); // Rectangle
+      
+          // REQUEST ANIMATION FRAME
+          requestAnimationFrame(draw);
+      }
+      
+      // Event Listeners & Handlers
+      document.addEventListener("keydown", keydownHandler);
+      
+      function keydownHandler() {
+          // Toggle animate variable
+          if (animate) {
+              animate = false; // animate is true so make it false
+          } else {
+              animate = true; // animate is false so make it true
+          }
+      }
+    </code></pre>
+    <p>Note: The 'not' operator (!) may be used to toggle a variable more efficiently.</p>
+    <pre><code class="lang-js">
+      animate = !animate;
+    </code></pre>
+    <hr>
+
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Mouse & Keyboard Input</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P_AVAV-jgRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div> <!-- video-lessons-->
+  
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Assignment Title</h3>
+  </div> <!-- assignments-->
+
+</div>

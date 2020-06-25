@@ -1,0 +1,95 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Basic Graphics</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>HTML Canvas Element</h3>
+    <p>HTML has a <code>&lt;canvas&gt;</code> element that may be added to your web page.  The canvas element may be styled with css like any other element.</p>
+    <p><img src="cs10-pages/images/canvas.PNG" alt="Canvas Intro"></p>
+    <hr>
+
+    <h3>Canvas Coordinate System</h3>
+    <p>The canvas uses a coordinate system to specify the location of items to draw.  The origin is the top-left corner of the canvas and the x-axis increases as you go right from the origin and the y-axis increases as you go down from the origin.</p>
+    <p><img src="cs10-pages/images/canvas-coords.PNG" alt="Canvas Coordinates"></p>
+    <hr>
+
+    <h3>Graphics Context</h3>
+    <p>A graphics context is used to draw on the canvas.  The graphics context for the canvas contains many methods for drawing shapes, text and images onto the canvas.</p>
+    <p><img src="cs10-pages/images/setup-ctx.PNG" alt="Setup Canvas and Context"></p>
+    <p><img src="cs10-pages/images/solid-rect.PNG" alt="Solid Rectangle"></p>
+    <p><img src="cs10-pages/images/stroke-rect.PNG" alt="Outlined Rectangle"></p>
+    <p><img src="cs10-pages/images/solid-text.PNG" alt="Solid Text"></p>
+    <p><img src="cs10-pages/images/stroke-text.PNG" alt="Outlined Text"></p>
+    <p><img src="cs10-pages/images/draw-line.PNG" alt="Draw Line"></p>
+    <p><img src="cs10-pages/images/solid-triangle.PNG" alt="Solid Triangle"></p>
+    <p><img src="cs10-pages/images/stroke-triangle.PNG" alt="Outlined Triangle"></p>
+    <p><img src="cs10-pages/images/solid-circle.PNG" alt="Solid Circle"></p>
+    <p><img src="cs10-pages/images/stroke-circle.PNG" alt="Outlined Circle"></p>
+    <p><img src="cs10-pages/images/draw-image.PNG" alt="Draw Image"></p>
+
+    <hr>
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Drawing Basics 1</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HfMBHr_jagg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr class="divider">
+
+    <h3>Drawing Basics 2</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3wsdRFayISA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr class="divider">
+
+    <h3>Drawing Basics 3</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OlUUoRHD_yM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+  </div> <!-- video-lessons-->
+  
+  <!-- Assignments -->
+  <div class="assignments">
+      <h3>Draw Sunrise Assignment</h3>
+      <div class="combo-box">
+          <div class="box1">
+              <img src="cs10-pages/images/draw-sunrise-asgn.PNG" width="300">
+          </div>
+          <div class="box2">
+              <p>Use basic shapes and images to draw the picture to the left on an html canvas.</p>
+              <p>Notes:</p>
+              <ul>
+                  <li>Canvas size is 400 x 400.</li>
+                  <li>Download cloud image: <a href="cs10-pages/images/cloth-cloud.png" target="_blank">cloth-cloud.png</a></li>
+              </ul> 
+          </div>
+      </div>
+      <hr>
+      
+      <h3>Draw Cityscape Assignment</h3>
+      <div class="combo-box">
+          <div class="box1">
+              <img src="cs10-pages/images/cityscape-asgn.PNG" width="300">
+          </div>
+          <div class="box2">
+              <p><strong>Start Code:</strong> <a href="https://github.com/mrveldkamp/cityscape-asgn-start.git" target="_blank">cityscape-asgn-start.git</a></p>
+              <p>Create the drawing to the left by using <strong>loops</strong> to add windows to the given start code.</p>
+          </div>
+      </div>
+      <hr>
+  </div> <!-- assignments-->
+
+</div>

@@ -1,0 +1,117 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Variables & Input</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Variables</h3>
+    <p>Variables are used to store data.</p>
+    <pre><code class='lang-js'>
+    // Declare a variable - tell JS to make a storage container called age 
+    let age;
+
+    // Assign data to variable - put data into age container 
+    age = 15;
+
+    // Use variable - log the contents of the age variable to the console
+    console.log(age); // Will log 15 to the console
+
+    // Reassign variable - put new data into container
+    age = 16;
+    console.log(age); // Will log 16 to the console
+    </code></pre>
+
+    <p>It is possible to declare a variable and assign a value to it in one line.</p>
+    <pre><code class='lang-js'>
+    let age = 15;
+    </code></pre>
+
+    <p>Take note of some rules and conventions to follow when naming a variable:</p>
+    <ul>
+      <li>Begin variable names with a lower-case letter.</li>
+      <li>Only use letters (a-z, A-Z), numbers(0-9) and underscores(_).</li>
+      <li>Use came casing for multi word variables (eg. myCamelCaseVariable)</li>
+      <li>Make variable names intuitive: describe what they store.</li>
+      <li>Avoid using JavaScript reserved words (eg. let, function, alert, ...)</li>
+    </ul>
+    <hr>
+
+    <h3>Text Input</h3>
+    <p>Text input from the user may be obtained with the <code class="lang-js">prompt()</code> function or with <code
+        class="lang-html">&lt;input&gt;</code> elements. The text input from the user may be stored in variables for
+      later use.</p>
+
+    <h4>prompt()</h4>
+    <p>The <code class="lang-js">prompt()</code> function will open a pop-up window where the user can provide input.
+    </p>
+    <pre><code class='lang-js'>
+    // Ask user for their favourite sport and give feedback
+    let faveSport = prompt("Please enter your favourite sport.");
+    alert("The sport of " + faveSport + " is fascinating!");
+    </code></pre>
+
+    <h4>&lt;input&gt; elements</h4>
+    <p>Add an <code class="lang-html">&lt;input&gt;</code> element with an id into your html document.</p>
+    <pre><code class='lang-html'>
+    &lt;-- Favourite Sport Input --&gt;
+    &lt;p&gt;Favourite Sport: &lt;input id='faveSportInput'&gt;&lt;/p&gt;
+    </code></pre>
+
+    <p>Use JavaScript to select the input element by id and get its <strong>value property</strong>.</p>
+    <pre><code class='lang-js'>
+    let faveSport = document.getElementById('faveSportInput').value;
+    alert("The sport of " + faveSport + " is fascinating!");
+    </code></pre>
+    <hr>
+
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Variables & Input - Notes Explanation</h3>
+    <p>Store data with variables and get text input from the user.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0s4A-R2yqqY?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HP6MHhjmxIg?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+
+  </div> <!-- video-lessons-->
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Mad Lib Assignment</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/mad-libs-logo.jpg" width="200">
+      </div>
+      <div class="box2">
+        <p>Build a Mad Lib to practice using variables and text input.</p>
+        <p><strong>Instructions: </strong><a
+            href='https://drive.google.com/open?id=1vF_6cZC_eKFLRoBu_MYFAYs39yo0BxexBZvEjSWTftE' target='_blank'>Mad Lib
+            Assignment</a></p>
+        <hr>
+        <p><em>Video Solution (YouTube Playlist):</em> <a
+            href="https://www.youtube.com/playlist?list=PLVrsNRbJzKu8Wd_GEgQYvg9HkBTI4hlER"
+            target="_blank">Mad-Lib-Asgn-Solution</a></p>
+      </div>
+    </div>
+    <hr>
+  </div> <!-- assignments-->
+
+</div>

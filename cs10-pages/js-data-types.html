@@ -1,0 +1,117 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Data Types & Operations</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Data Types</h3>
+    <p>Two main types of data in JavaScript are the <strong>String</strong> data type and the <strong>Number</strong>
+      data type.</p>
+
+    <h4>String Data Type</h4>
+    <p>A String is a sequence of characters used to represent text. Strings are enclosed by double or single quotes.</p>
+    <pre><code class='lang-js'>
+    "Hello World", 'green', '42'
+    </code></pre>
+
+    <h4>Number Data Type</h4>
+    <p>A Number is simply a number with or without a decimal and not enclosed by quotes.</p>
+    <pre><code class='lang-js'>
+    25, 3.14159, 42
+    </code></pre>
+    <hr>
+
+    <h3>Data Operations</h3>
+    <p>JavaScript has various operations that may be used on Strings and Numbers.</p>
+
+    <h4>String Operations</h4>
+    <p>One operation on Strings is <strong>concatenation</strong>: the addition or joining of Strings.</p>
+    <pre><code class='lang-js'>
+    // Join two strings together with addition / concatenation
+    'Hello' + 'World' evaluates to 'HelloWorld'
+    </code></pre>
+
+    <h4>Number Operations</h4>
+    <p>JavaScript supports various math operations on Numbers.  Take note that JavaScript follows proper order of operations and () may be used in calculations to influence the order of operations.</p>
+    <pre><code class='lang-js'>
+    // Addition
+    2 + 3 evaluates to 5
+
+    // Subtraction
+    7 - 3 evaluates to 4
+
+    // Multiplication
+    6 * 5 evaluates to 30
+
+    // Division
+    5 / 2 evaluates to 2.5
+
+    // Remainder (Modulus)
+    5 % 2 evaluates to 1
+
+    // Exponent 
+    5 ** 2 evaluates to 25
+
+    // Order of Operations
+    1 + 2 * 3 evaluates to 7
+    (1 + 2) * 3 evaluates to 9
+    </code></pre>
+    <hr>
+
+    <h3>Data Conversions</h3>
+    <p>JavaScript can convert one type of data to another, if possible.</p>
+    <h4>Automatic Conversions</h4>
+    <p>In some cases, JavaScript will convert data automatically in order to make the operation work.</p>
+    <pre><code class='lang-js'>
+    // JavaScript automatically converts the Number to a String
+    2 + '3' evaluates to '23'
+
+    // JavaScript automatically converts the String to a Number
+    2 * '3' evaluates to 6
+    </code></pre>
+
+    <h4>Conversion Functions</h4>
+    <p>JavaScript provides the functions <code class="lang-js">Number()</code> and <code class="lang-js">String()</code> to convert data, if possible.</p>
+
+    <pre><code class='lang-js'>
+    // Convert Number to String
+    String(23.4) evaluates to '23.4'
+    String(-15) evaluates to '-15'
+
+    // Convert String to Number
+    Number('7') evaluates to 7
+    2 + Number('3') evaluates to 5
+
+    // Not possible
+    Number('Hello World!') evaluates to NaN (Not a Number)
+    Number("seven") evaluates to NaN (Not a Number)
+    </code></pre>
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Data Types & Operations - Notes Explanation</h3>
+    <p>Introduction to String and Number Data Types & Operations</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JUXIROSTvD0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div> <!-- video-lessons-->
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Assignment Title</h3>
+  </div> <!-- assignments-->
+
+</div>

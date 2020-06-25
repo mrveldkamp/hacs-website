@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Interaction Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>HTML Interaction Practice</h1>
+
+    <p>Some html code and the result of that code are shown below. Press the "Generate Challenge" button to receive a
+        task that will get you to use JavaScript to modify the html document shown below. Type your solution in the
+        space provided and then hit Enter to run your solution.</p>
+    <p><button id="generate-challenge">Generate Challenge</button> <span id="task">----------</span> </p>
+    <p><strong>Solution:</strong> <input id="code"></p>
+
+    <!-- HTML Display -->
+    <div class="html-display">
+        <div class="html-code">
+            <img src="images/html-code-img.PNG">
+        </div>
+
+        <div class="html-result">
+            <!-- HTML CODE -->
+            <h1 id="main-heading">Heading 1</h1>
+
+            <h2 id="sub-heading1">Sub Heading 1</h2>
+            <p id='para1'>
+                Lorem, <a id="link1" href="https://www.lipsum.com/">ipsum</a>
+                dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <ul id="list">
+                <li id="li1">List item 1</li>
+                <li id="li2">List item 2</li>
+                <li id="li3">List item 3</li>
+            </ul>
+
+            <img id="img1" src="images/lorem-ipsum1.jpg">
+
+            <h2 id="sub-heading2">Sub Heading 2</h2>
+            <p id="para2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cum debitis molestias <span id="span1">omnis</span> voluptas,
+                consequatur ex cumque velit libero quidem est?
+            </p>
+        </div>
+    </div>
+
+    <!-- Load JavaScript -->
+    <script src="math-extensions.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

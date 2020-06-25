@@ -1,0 +1,98 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Numerical Input</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Numerical Input</h3>
+    <p>Input received from <code class="lang-js">prompt()</code> or <code class="lang-html">&lt;input&gt;</code>
+      elements is <em>always returned as a String data type</em>.</p>
+    <p>In order to do mathematical operations with input it is best to convert the input to a Number data type by using
+      the <code class="lang-js">Number()</code> function.</p>
+    <pre><code class='lang-js'>
+    // Prompt user for numerical input
+    let num1 = Number(prompt("Please enter a number."));
+    
+    // Get numerical data from input element
+    let num2 = Number(document.getElementById('numInput').value);
+    </code></pre>
+    <hr>
+
+    <h3>IPO Algorithm</h3>
+    <p>A common algorithm is an <strong>Input, Process, Output</strong> algorithm. This algorithm involves:</p>
+    <ol>
+      <li><strong>I</strong>nput - get input from the user.</li>
+      <li><strong>P</strong>rocess - process input in some way (ie. calculations).</li>
+      <li><strong>O</strong>utput - output the result.</li>
+    </ol>
+
+    <h4>Example: Simple Addition Calculator</h4>
+    <pre><code class='lang-js'>
+    // SIMPLE ADDITION CALCULATOR
+
+    // Input - two numbers
+    let num1 = Number(prompt('Please enter a number:''));
+    let num2 = Number(prompt('Please enter another number:'));
+
+    // Process - calculate sum
+    let total = num1 + num2;
+
+    // Output - display result
+    alert('The sum of your number is ' + total + '.');
+    </code></pre>
+    <hr>
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Numerical Input - Notes Explanation</h3>
+    <p>Start Code: <a href="https://github.com/mrveldkamp/simple-addition-start.git"
+        target='_blank'>simple-addition-start.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3CxhdEvBLPM?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+  </div> <!-- video-lessons-->
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>IPO Calculators Assignment</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/input-process-output.png" width="300">
+      </div>
+      <div class="box2">
+        <p>Use an <strong>Input - Process - Output</strong> algorithm to create a Fahrenheit to Celsius convertor
+          program and an Area of a Trapezoid calculator program.
+        </p>
+        <p><strong>Instructions: </strong><a
+            href="https://drive.google.com/open?id=1Uw86KGLsC12PGbQw7qW38IE0UMztFnyPJ7VkR9qMRRY"
+            target="_blank">Fahrenheit to Celsius Assignment</a></p>
+
+        <p><strong>Instructions: </strong><a
+            href="https://drive.google.com/open?id=12LadnY12JeKIPLkKsBCZELbY0FwAStpNussXQKogqSU" target="_blank">Area
+            of a Trapezoid Assignment</a></p>
+        <hr>
+        <p><em>Video Solution (YouTube Playlist): </em><a
+            href="https://www.youtube.com/playlist?list=PLVrsNRbJzKu_-w8QgTCxcj47WeT67-iLD"
+            target="_blank">Fahrenheit-to-Celsius-Asgn-Solution</a></p>
+      </div>
+    </div>
+
+  </div> <!-- assignments-->
+
+</div>

@@ -1,0 +1,122 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>HTML Interaction</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>JavaScript & HTML</h3>
+    <p>JavaScript may be used to interact with a web page. JavaScript can select html elements and then modify their
+      content, style and behaviour.</p>
+    <hr>
+
+    <h4>Select html elements...</h4>
+    <pre><code class="lang-js">
+  document.getElementById('id');
+    </code></pre>
+
+    <h4>Add event listeners to a specific html element...</h4>
+    <pre><code class="lang-js">
+  document.getElementById('id').addEventListener('event', functionName);
+    </code></pre>
+
+    <h4>Set content of a specific html element...</h4>
+    <pre><code class="lang-js">
+  document.getElementById('id').innerHTML = '______';
+    </code></pre>
+
+    <h4>Set attribute of a specific html element...</h4>
+    <pre><code class="lang-js">
+  document.getElementById('id').attr = '______';
+  // Replace .attr with any valid html attribute: (src, href, ...)
+    </code></pre>
+
+    <h4>Set style property of a specific html element...</h4>
+    <pre><code class="lang-js">
+  document.getElementById('id').style.property = '______';
+  // Replace .property with any valid CSS property: (color, width, ...)
+  // CSS properties with hyphens change to camelCasing (ie. font-size -> fontSize)
+    </code></pre>
+
+    <h4>Add / remove css classes...</h4>
+    <pre><code class="lang-js">
+  document.getElementById('id').classList.add('className');
+  document.getElementById('id').classList.remove('className');
+  document.getElementById('id').classList.toggle('className');
+    </code></pre>
+    <hr>
+
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>HTML Interaction - Notes Explanation</h3>
+    <p>Use JavaScript to modify html content, style and behaviour.</p>
+    <p>Start Code: <a href='https://github.com/mrveldkamp/dummy-html.git' target='_blank'>dummy-html.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9IE47mORDNU?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQDHKHmx5IY?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>JS-Vivaldi</h3>
+    <p>Use JavaScript to add interactivity to the Vivaldi Web Page.</p>
+    <p>Start Code and Instructions: <a href='https://github.com/mrveldkamp/js-vivaldi.git'
+        target='_blank'>js-vivaldi.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MnaBVsP3bZc?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yHFogDYSjTI?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+  </div> <!-- video-lessons-->
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>HTML Interaction Practice</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/html-css-js-friends.jpg" width="300">
+      </div>
+      <div class="box2">
+        <p>Use the HTML Interaction Practice program to test your ability to use JavaScript to modify html content.</p>
+        <p><a href="cs10-pages/html-interaction-practice/" target="_blank">HTML Interaction Practice</a></p>
+      </div>
+    </div>
+    <hr>
+
+
+    <h3>Android vs Apple Assignment</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/apple-vs-android.jpg" width="300">
+      </div>
+      <div class="box2">
+        <p>Use JavaScript to respond to user events and modify the content of the page based on the user's selection.
+        </p>
+        <p><strong>Start Code & Instructions</strong>: <a href="https://github.com/mrveldkamp/js-android-vs-apple.git"
+            target="_blank">js-android-vs-apple.git</a></p>
+        <hr>
+        <p><em>Video Solution (YouTube Playlist)</em>: <a
+            href="https://www.youtube.com/playlist?list=PLVrsNRbJzKu8FqmNjOpxU2P27lF_588bX"
+            target="_blank">Android-vs-Apple-Asgn-Solution</a></p>
+      </div>
+    </div>
+    <hr>
+
+  </div> <!-- assignments-->
+
+</div>

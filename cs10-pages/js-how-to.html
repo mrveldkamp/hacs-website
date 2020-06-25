@@ -1,0 +1,80 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>JS How To</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>JavaScript</h3>
+    <p>JavaScript is a programming language that is most well known as a scripting language for web pages.  JavaScript helps make web pages alive!  Programs in JavaScript may be run by a web browser and are commonly called scripts.</p>
+    <hr>
+
+    <h4>Internal Script</h4>
+    <pre><code class="lang-html">
+&lt;!DOCTYPE html&gt;
+&lt;body&gt
+  &lt;h1&gt;JavaScript Concept Notes&lt;/h1&gt;
+
+  &lt;!-- Run JavaScript Commands --&gt;
+  &lt;script&gt;
+    alert('Hello World!');
+    alert('This is awesome!');
+  &lt;/script&gt;
+&lt;/body&gt  
+    </code></pre>
+    <p>Script is embedded into an HTML document.</p>
+    <p>JavaScript commands execute inside of the &lt;script&gt;&lt;/script&gt; element.</p>
+    <p><strong>alert()</strong> is a JavaScript command that tells the browser to display a provided message in a pop-up window.</p>
+    <hr>
+
+    <h4>External Script</h4>
+    <em>index.html</em>
+    <pre><code class="lang-html">
+&lt;!DOCTYPE html&gt;
+&lt;body&gt
+  &lt;h1&gt;JavaScript Concept Notes&lt;/h1&gt;
+
+  &lt;!-- Run JavaScript Commands --&gt;
+  &lt;script src='main.js'&gt;&lt;/script&gt;
+&lt;/body&gt  
+    </code></pre>
+
+    <em>main.js</em>
+    <pre><code class="lang-js">
+      // JavaScript File 
+
+      alert('Hello World!');
+      alert('This is awesome!');
+    </code></pre>
+    <p>Script is loaded into HTML document from an external file.</p>
+    <p>Note the use of // for JavaScript comments.</p>
+    <hr>
+    <p><strong>Note:</strong> Browser console <em>(F12)</em> is useful for checking error messages for your JavaScript code.  You can also log messages to the console using the JavaScript command: <strong>console.log()</strong></p>
+  </div> <!-- .concept-notes -->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>JS How To - Notes Explanation</h3>
+    <p>How to run JavaScript using the &lt;script&gt; element.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TTyWgkyJlH8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div>
+  
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Assignment Title</h3>
+  </div>
+
+</div>

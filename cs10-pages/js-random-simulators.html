@@ -1,0 +1,95 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Random & Simulators</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Random Numbers</h3>
+    <p>The JavaScript Math object may be used to generate random numbers:</p>
+    <ul>
+      <li><code class="lang-js">Math.random()</code> returns a random decimal from 0 up to 1.</li>
+      <li><code class="lang-js">Math.floor()</code> rounds a value down to the nearest integer.</li>
+    </ul>
+
+    <pre><code class='lang-js'>
+    // Random Decimal between 0 (inclusive) and 1 (exclusive): 0 to 0.9999...
+    Math.random();
+    
+    // Random Decimal between 0 (inclusive) and 10 (exclusive): 0 to 9.9999...
+    Math.random() * 10;
+
+    // Random Integer between 0 (inclusive) and 10 (exclusive): 0, 1, ..., 8, 9
+    Math.floor(Math.random() * 10);
+
+    // Random Integer between 1 (inclusive) and 11 (exclusive): 1, 2, ..., 9, 10
+    Math.floor(Math.random() * 10) + 1
+    </code></pre>
+    <hr>
+
+    <h3>Simulators</h3>
+    <p>Random Numbers allow us to use randomness and probability to simulate the result of an event:</p>
+    <pre><code class='lang-js'>
+    // Simulate result of flipping a coin - 50/50 chance
+    let randNum = Math.random();
+    if (randNum < 0.5) {
+      alert("Heads!");
+    } else {
+      alert("Tails!");
+    }
+    </code></pre>
+
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Random Numbers - Notes Explanation</h3>
+    <p>Use JavaScript Math Object to generate Random Decimals and Integers</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OA00KESZzZ0?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>Minecraft Fishing Simulator</h3>
+    <p>Random Numbers and If Statements to Simulate Fishing Results</p>
+    <p>Start Code: <a href="https://github.com/mrveldkamp/js-minecraft-fishing-sim-start.git"
+        target='_blank'>js-minecraft-fishing-sim-start.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pQvuMmgNg5o?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OiKiX0NAJ7A?rel=0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+  </div> <!-- video-lessons-->
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Mario Kart Item Box Simulator</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/mario-kart-item-box.png" width="300">
+      </div>
+      <div class="box2">
+        <p>Simulate the results of collectiong a Mario Kart Item Box.</p>
+        <p>Instructions: <a href="https://drive.google.com/open?id=1aSt3pWc5s0NIE9YrgAnVqeFhmCm2LTLuBZsju0g78PY"
+            target="_blank">Mario
+            Kart Item Box Assignment</a></p>
+      </div>
+    </div>
+    <hr>
+
+  </div> <!-- assignments-->
+
+</div>

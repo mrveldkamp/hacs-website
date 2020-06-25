@@ -1,0 +1,195 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Animation Intro</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Animation Basics</h3>
+    <p>To create an animation, use the <em>requestAnimatonFrame()</em> function to execute code that will:</p>
+    <ul>
+      <li>update elements on the canvas,</li>
+      <li>redraw the canvas,</li>
+      <li>and request another animation frame.</li>
+    </ul>
+    <pre><code class="lang-js">
+      let x = 100;
+
+      requestAnimationFrame(draw);
+      function draw() {
+          // UPDATE ELEMENTS ON CANVAS
+          x++;
+      
+          // DRAW CANVAS
+          ctx.fillStyle = "white"
+          ctx.fillRect(0, 0, cnv.width, cnv.height); // Background
+      
+          ctx.fillStyle = "green";
+          ctx.fillRect(x, 100, 50, 50); // Rectangle
+      
+          // REQUEST ANIMATION FRAME
+          requestAnimationFrame(draw);
+      }
+    </code></pre>
+    <p>The <em>requestAnimatonFrame()</em> function enables the browser to determine the optimal <strong>FPS</strong>
+      (frames per second) for the animation: usually around 60 frames per second.</p>
+    <p><strong>Declaring, initializing, updating</strong> and <strong>using</strong> variables is critical to creating
+      an animation.</p>
+    <hr>
+
+    <h3>Run Animation Till a Certain Value</h3>
+    <p>An if statement may be used to control when to update animation variables. It is possible to only run an
+      animation while a variable is within a certain range.</p>
+    <pre><code class="lang-js">
+      let x = 100;
+
+      requestAnimationFrame(draw);
+      function draw() {
+          // UPDATE ELEMENTS ON CANVAS
+      
+          // Animate if x is less than 400
+          if (x < 400) {
+              x++;
+          }
+      
+          // DRAW CANVAS
+          ctx.fillStyle = "white"
+          ctx.fillRect(0, 0, cnv.width, cnv.height); // Background
+      
+          ctx.fillStyle = "green";
+          ctx.fillRect(x, 100, 50, 50); // Rectangle
+      
+          // REQUEST ANIMATION FRAME
+          requestAnimationFrame(draw);
+      }
+    </code></pre>
+    <hr>
+
+    <h3>Run Animation For a Time</h3>
+    <p>A variable that counts the number of frames <em>(ie. frameCount)</em> may be used to control when an animation
+      should run.</p>
+    <pre><code class="lang-js">
+      let x = 100;
+      let frameCount = 0;
+      
+      requestAnimationFrame(draw);
+      function draw() {
+          // UPDATE ELEMENTS ON CANVAS
+          frameCount++;
+      
+          // Animate if frameCount is less than 120
+          // FPS is usually around 60 (so 120 frames == 2 seconds)
+          if (frameCount < 120) {
+              x++;
+          }
+      
+          // DRAW CANVAS
+          ctx.fillStyle = "white"
+          ctx.fillRect(0, 0, cnv.width, cnv.height); // Background
+      
+          ctx.fillStyle = "green";
+          ctx.fillRect(x, 100, 50, 50); // Rectangle
+      
+          // REQUEST ANIMATION FRAME
+          requestAnimationFrame(draw);
+      }
+    </code></pre>
+    <hr>
+
+    <h3>Reset Animation</h3>
+    <p>An if statement may also be used to test the state of an animation and then modify any animation variables.</p>
+    <pre><code class="lang-js">
+      let x = 100;
+
+      requestAnimationFrame(animate);
+      function animate() {
+          // UPDATE ELEMENTS ON CANVAS
+          x++;
+      
+          // Reset animation if x > 300
+          if (x > 300) {
+              x = 100;
+          }
+      
+          // DRAW CANVAS
+          ctx.fillStyle = "white"
+          ctx.fillRect(0, 0, cnv.width, cnv.height); // Background
+      
+          ctx.fillStyle = "green";
+          ctx.fillRect(x, 100, 50, 50); // Rectangle
+      
+          // REQUEST ANIMATION FRAME
+          requestAnimationFrame(animate);
+      }
+    </code></pre>
+    <hr>
+  </div> <!-- .concept-notes-->
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Animation Basics</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/F8I8RpZTZWI" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>Control Animation</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OIpQo_SC9gg" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3></h3>
+  </div> <!-- video-lessons-->
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Animate Sunrise Assignment</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/draw-sunrise-asgn.PNG" width="300">
+      </div>
+      <div class="box2">
+        <p>Animate your sunrise drawing so that the following occurs:</p>
+        <ul>
+          <li>one cloud moves left off of the screen.</li>
+          <li>the other cloud moves right off of the screen.</li>
+          <li>the sun rises up in the sky.</li>
+          <li>the sun gets larger in size.</li>
+          <li>the sun changes from red to yellow.</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+
+
+    <h3>Windy Day Assignment</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs10-pages/images/windy-day-asgn.PNG" width="300">
+      </div>
+      <div class="box2">
+        <p><strong>Start Code:</strong> <a href="https://github.com/mrveldkamp/windy-day-start.git"
+            target="_blank">winday-day-start.git</a></p>
+        <p>Modify the given start code by completing the following tasks:</p>
+        <ol>
+          <li>Program the second cloud to behave the same way as the first cloud.</li>
+          <li>Program both clouds to move left to right instead of right to left.</li>
+        </ol>
+      </div>
+    </div>
+    <hr>
+  </div> <!-- assignments-->
+
+</div>

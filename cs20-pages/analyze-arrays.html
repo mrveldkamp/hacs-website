@@ -1,0 +1,106 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Analyze Arrays</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Built-in Methods</h3>
+    <p>JavaScript has some built-in tools that help when working with arrays. A few of these tools are highlighted
+      below...</p>
+    <hr>
+
+    <h4>includes() Method</h4>
+    <p>The <strong>includes()</strong> method determines whether an array contains a specified item. This method
+      returns <em>true</em> if the array contains the item, and <em>false</em> if not.</p>
+
+    <p class="highlight-box">array.includes(item)</p>
+
+    <pre><code class="lang-js">
+    let attendanceList = ["Angela", "Bryan", "Carol", "David"];
+    if (attendanceList.includes("Joe")) {
+      console.log("I'm so glad Joe could make it!");
+    } else {
+      console.log("I wonder where Joe is?");
+    }
+    </code></pre>
+    <hr>
+
+    <h4>indexOf() Method</h4>
+    <p>The <strong>indexOf()</strong> method searches the array for the specified item, and returns its position.
+      Returns -1 if the item is not found. If the item is present more than once, the indexOf() method returns the
+      position of the first occurence. <em>(Note: there is also a <strong>lastIndexOf()</strong> method that returns
+        the position of the last occurence.)</em></p>
+
+    <p class="highlight-box">array.indexOf(item)</p>
+
+    <pre><code class="lang-js">
+    let attendanceList = ["Angela", "Bryan", "Carol", "David"];
+    let index = attendanceList.indexOf("Carol");
+    if (index == -1) {
+      console.log("Carol not found.");
+    } else {
+      console.log("Carol found at position: " + index);
+    }
+    </code></pre>
+    <hr>
+
+    <h4>Math.max() Method</h4>
+    <p>The <strong>Math.max()</strong> method takes in numerical arguments and returns the argument with the highest
+      value. <em>(Note: there is also a <strong>Math.min()</strong> method.)</em></p>
+
+    <p class="highlight-box">Math.max(n1, n2, n3, ..., nX)</p>
+
+    <p>The <strong>Math.max()</strong> method is designed to work with multiple arguments and not an array. In order to
+      use Math.max() for arrays, the spread operator (...) may be used to expand the array in place of the required
+      arguments.</p>
+
+    <pre><code class="lang-js">
+    let maxNum = Math.max(50, 20, 30, 70, 40); // maxNum -> 70
+
+    let numArray = [2, 8, 12, 5, 9, 20, 17, 3];
+    let maxElement = Math.max(...numArray); // maxElement -> 20
+    let minElement = Math.min(...numArray); // minElement -> 2
+    </code></pre>
+    <hr>
+  </div>
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Analyze Arrays Notes Explanation</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6Y2C6GXdrU0?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div>
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Student Grade Analyzer</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs20-pages/images/student-analyzer-asgn.PNG" width="350px">
+      </div>
+      <div class="box2">
+        <h4>Instructions</h4>
+        <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/student-analyzer.git" target="_blank">student-analyzer.git</a></p>
+        <p>In this assignment you will have to write a few functions in order to get the provided start code working.</p>
+        <p>The file <em>"array-helpers.js"</em> contains the criteria for the functions you must write and is the file in which you should define your functions.</p>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</div>

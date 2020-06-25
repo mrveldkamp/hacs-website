@@ -1,0 +1,59 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Copy & Compare Arrays</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <!-- Copy Arrays -->
+    <h3>Copy Arrays</h3>
+    <p>The <strong>slice()</strong> method may be used to <strong>copy</strong> all or part of an array. The slice() method takes in optional start <em>(inclusive)</em> and stop <em>(exclusive)</em> arguments.</p>
+    <pre><code class="lang-js">
+    // ARRAY SLICE METHOD
+    let anArray = [10, 20, 30, 40, 50, 60, 70];
+    let slice1 = anArray.slice(1, 4); // index 1 to 3: [20, 30, 40]
+    let slice2 = anArray.slice(3); // index 3 to end: [40, 50, 60, 70] 
+    let slice3 = anArray.slice(); // entire array: [10, 20, 30, 40, 50, 60, 70]
+    </code></pre>
+    <hr>
+
+    <!-- Compare Arrays -->
+    <h3>Compare Arrays</h3>
+    <p>To <strong>compare</strong> simple arrays, one technique is to convert the arrays to strings and then check the strings for equality.  The <strong>join()</strong> method may be used to convert an array to a string, using a provided argument as the separator between elements.</p>
+    <pre><code class="lang-js">
+    // ARRAY COMPARE WITH JOIN
+    let array1 = [1, 2, 3];
+    let array2 = [1, 2, 3];
+    let array3 = [3, 2, 1];
+    array1 == array2; // False (Different memory addresses)
+    array1.join("") == array2.join(""); // True ("123" == "123")
+    array1.join("") == array3.join(""); // False ("123" != "321")
+    </code></pre>
+    <hr>
+  </div>
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Copy & Compare Arrays Notes Explanation</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aqBW3i4m2DQ?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>Konami Code - Compare Arrays</h3>
+    <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/js-web-app-template.git" target="_blank">js-web-app-template.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_qzHmYREliA?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+    <hr>
+  </div>
+  
+</div>

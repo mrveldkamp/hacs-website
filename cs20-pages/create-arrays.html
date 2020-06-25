@@ -1,0 +1,190 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Create Arrays++</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <!-- Create an Array with a Loop -->
+    <h3>Create an Array with a Loop</h3>
+    <p>Loops may be used to create arrays one item at a time. The <strong>push()</strong> method is used to add an
+      element to the end of the array.</p>
+    <pre><code class="lang-js">
+    // Create an array with identical values (100 exclamation marks)
+    let identicalArray = [];
+    for (let n = 0; n < 100; n++) {
+        identicalArray.push("!");
+    }
+
+    // Create a random array (500 random decimals b/t 0 and 1)
+    let randomArray = [];
+    for (let n = 0; n < 500; n++) {
+        randomArray.push(Math.random());
+    }
+
+    // Create an array from user input (5 colors)
+    let inputArray = [];
+    for (let n = 0; n < 5; n++) {
+        inputArray.push(prompt("Please enter a color:"));
+    }
+
+    // Create a patterned array (even #'s b/t 0 and 50, inclusive)
+    let patternArray = [];
+    for (let num = 0; num <= 50; num += 2) {
+        patternArray.push(num);
+    }
+    </code></pre>
+    <hr>
+
+    <!-- Create an Array From a String -->
+    <h3>Create an Array From a String</h3>
+    <p>A string may be turned into an array with the <strong>split()</strong> method. The <strong>split()</strong>
+      method takes in an argument that will be used as the token to separate the string.</p>
+    <pre><code class="lang-js">
+    // Create arrays from strings with split()
+    let namesString = "adam,ben,caleb,david";
+    let namesArray = namesString.split(",");
+    // -> ["adam", "ben", "caleb", "david"]
+
+    let scoresString = "80;90;75;88;95;99;85";
+    let scoresArray = scoresString.split(";");
+    // -> ["80", "90", "75", "88", "95", "99", "85"]
+
+    let sentence = "I love arrays";
+    let wordArray = sentence.split(" ");
+    // -> ["I", "love", "arrays"]
+    let characterArray = sentence.split("");
+    // -> ["I"," ","l","o","v","e"," ","a","r","r","a","y","s"]
+    </code></pre>
+    <p>The <strong>join()</strong> method may be used to turn an array back into a string. The <strong>join()</strong>
+      method takes in an argument that will be used as the token to place between array elements.</p>
+    <pre><code class="lang-js">
+    // Convert an array into a string with join()
+    let wordArray = ["I", "love", "arrays"];
+    let sentence = wordArray.join(" ");
+    // -> "I love arrays"
+    </code></pre>
+    <hr>
+
+    <!-- Create an Array From a File -->
+    <h3>Create an Array From a File</h3>
+    <p>The <strong>fetch()</strong> and <strong>then()</strong> methods may be used to:</p>
+    <ul>
+      <li>retrieve raw data from a file,</li>
+      <li>convert raw data to a string,</li>
+      <li>and then split string into an array.</li>
+    </ul>
+
+    <pre><code class="lang-js">
+    // Global Variable to store file contents
+    let colorsArray;
+
+    // colors.txt contains one color name per line
+    fetch("colors.txt").then(convertData).then(processData);
+
+    function convertData(rawData) {
+      return rawData.text(); // convert file contents to string
+    }
+
+    function processData(data) {
+      colorsArray = data.split("\r\n"); // Split string by end of line
+    }
+    </code></pre>
+    <p>Same example as above but with Anonymous Arrow Functions (more concise)</p>
+    <pre><code class="lang-js">
+    let colorsArray;
+
+    fetch("colors.txt")
+      .then((rawData) => rawData.text())
+      .then((data) => colorsArray = data.split("\r\n"));
+    </code></pre>
+    <hr>
+
+    <!-- Create an Array of HTML Elements -->
+    <h3>Create an Array of HTML Elements</h3>
+    <p>HTML elements may be selected using <strong>querySelectorAll()</strong>. This method will take any valid css
+      selector and all elements that match the css selector will be returned in a NodeList (similar to an array).</p>
+    <pre><code class="lang-js">
+    // Select all paragraph elements with the class "special"
+    let specialParaEls = document.querySelectorAll("p.special");
+
+    // Add an event listener to all paragraph elements with the class special
+    for (let i = 0; i < specialParaEls.length; i++) {
+      specialParaEls[i].addEventListener("click", doSomethingSpecial);
+    }
+    </code></pre>
+    <hr>
+
+  </div>
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Create Arrays++ Notes Explanation</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2VVNM6uvU_Q?rel=0&amp;showinfo=0"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <hr>
+
+    <h3>Create Arrays Loops</h3>
+    <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/array-visualizer.git"
+        target="_blank">array-visualizer.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KLB1aURjzco?rel=0&amp;showinfo=0"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <hr>
+
+    <h3>Fuddify Text</h3>
+    <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/js-web-app-template.git"
+        target="_blank">js-web-app-template.git</a>
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WF1dh4x_JI4" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr class="divider">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gjM2GIzLGSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>Drum Kit - querySelectorAll</h3>
+    <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/drum-kit-start.git"
+        target="_blank">drum-kit-start.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/73X0xpXfeTo?rel=0&amp;showinfo=0"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <hr>
+  </div>
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Modify Previous Assignments</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs20-pages/images/modification-icon.jpg" alt="Modify Icon" width="300">
+      </div>
+      <div class="box2">
+        <p>Use what you've learned about creating arrays to improve a few of the previous assignments you've completed:
+        </p>
+        <ul>
+          <li><strong>Random Dance:</strong> initialize the array to have 100 elements all equal to 300.</li>
+          <li><strong>Student Grades:</strong> initialize the array to have 50 random grades.</li>
+          <li><strong>Nickname Generator:</strong> load nicknames from a text file.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>

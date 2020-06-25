@@ -1,0 +1,71 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>2d Arrays (Grids)</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>2d Arrays</h3>
+    <p>A <strong>2D Array</strong> is an <em>"array of arrays"</em>.</p>
+    <p>An outer array will serve as a container for other arrays.</p>
+    <pre><code class="lang-js">
+      let array2D = [ [255, 255, 0], [0, 255, 0], [0, 255, 255] ];
+    </code></pre>
+    <p>A double index operator, [][], may be used to access values inside the 2D array.</p>
+    <pre><code class="lang-js">
+      // Access the 2nd value in the 3rd inner array
+      array2D[2][1] = 0; // -> [ [255, 255, 0], [0, 255, 0], [0, 0, 255] ]
+    </code></pre>
+    <hr>
+
+    <h3>Grids</h3>
+    <p>A common use of 2D arrays is to represent a <strong>grid</strong> with rows and columns.</p>
+    <pre><code class="lang-js">
+      let grid = [ [0, 1, 0],
+                  [1, 1, 0],
+                  [0, 0, 1] ];
+    </code></pre>
+    <p>Each inner array is a row and the columns are the individual elements inside of the inner arrays.</p>
+    <p>To access elements in the grid, use <code class="lang-js">grid[row][column]</code></p>
+    <p><img src="cs20-pages/images/2d-Array.jpg" alt="2D Array"></p>
+    
+    <pre><code class="lang-js">
+      // Example: Access 3rd element in the first row
+      grid[0][2] = 1;
+    </code></pre>
+  </div>
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Grid / Maze Designer</h3>
+    <p><strong>Start Code:</strong>
+      <a href="https://github.com/ha-cs20-course-activities/js-web-app-template.git">js-web-app-template.git</a>
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sfPQGp8PqCU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr class="divider">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7ch6gOHgqI8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr class="divider">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dgeQroQkido?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+  </div>
+  
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Assignment Title</h3>
+  </div>
+
+</div>

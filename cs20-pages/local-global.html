@@ -1,0 +1,55 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Local & Global Variables</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Local & Global Variables</h3>
+    <h4>Local Variable:</h4>
+    <p>a variable declared inside of a function <em>(only visible inside that function)</em>.</p>
+    <h4>Global Variable:</h4>
+    <p>a variable declared outside any functions <em>(visible everywhere)</em>.</p>
+
+    <pre><code class="lang-js">
+      let name = 'Megan'; // Global Variable
+
+      function displayGreeting() {
+        let timeOfDay = 'Morning'; // Local Variable
+
+        console.log('Hello ' + name + '.'); // OK, global variable visible everywhere
+        console.log('Have a good ' + timeOfDay + "!"); // OK, local variable visible in function
+      }
+
+      displayGreeting();
+      console.log('Goodbye ' + name + '.'); // OK, global variable visible everywhere
+      console.log('See you next ' + timeOfDay + '.'); // ERROR, timeOfDay is local to function
+    </code></pre>
+    <hr>
+  </div>
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Local & Global Variables Notes Explanation</h3>
+    <p>Local Variables | Global Variables</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aQX-JZUG88Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Assignment Title</h3>
+  </div>
+
+</div>

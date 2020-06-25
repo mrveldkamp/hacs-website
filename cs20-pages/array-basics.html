@@ -1,0 +1,140 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+
+  
+</style>
+
+<!-- Section Heading -->
+<h2>Array Basics</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Create an Array with [ ]</h3>
+    <p>An array is an ordered collection of values. An array can be created by putting comma-separated values into
+      square brackets.</p>
+    <pre><code class="lang-js">
+    let emptyArray = [];
+    let numberArray = [1, 2, 3.0, 4, 5];
+    let stringArray = ["red", "green", "blue"];
+    let mixedArray = ["text", 7, true, 3.14, {x: 1, y: 4}, [1, 2, 3]];
+    </code></pre>
+    <hr>
+
+    <h3>Access Elements with [ ]</h3>
+    <p>Each element in an array has a position / index. The index starts at 0 and then increases by one.</p>
+    <pre><code class="lang-js">
+    let letterArray = ["a", "b", "c", "d"];
+    //                  (index) ->  0      1      2      3 
+    </code></pre>
+    <p>The value of an individual element may be accessed using the name of the array, square brackets [ ], and the
+      index of the element:
+    </p>
+    <p class="highlight-box">nameOfArray[index]</p>
+    <pre><code class="lang-js">
+    console.log("1st element at index 0 is " + letterArray[0]);
+    console.log("2nd element at index 1 is " + letterArray[1]);
+    console.log("3rd element at index 2 is " + letterArray[2]);
+    console.log("4th element at index 3 is " + letterArray[3]);
+    </code></pre>
+    <hr>
+
+    <h3>Traverse an Array</h3>
+    <p>To <strong>traverse</strong> an array means to travel over all the elements in an array.</p>
+    <p>A loop may be used to generate all of the index values of an array and then you can use those index values to
+      access each of the array elements.</p>
+    <div class="combo-box">
+      <div class="box1">
+        <pre><code class="lang-js">
+    // Print out all array elements - NO LOOP
+    let fibonacci = [1, 2, 3, 5, 8, 13, 21];
+    console.log(fibonacci[0]);
+    console.log(fibonacci[1]);
+    console.log(fibonacci[2]);
+    console.log(fibonacci[3]);
+    console.log(fibonacci[4]);
+    console.log(fibonacci[5]);
+    console.log(fibonacci[6]);
+    </code></pre>
+      </div>
+      <div class="box2">
+    <pre><code class="lang-js">
+    // Print out all array elements - LOOP
+    let fibonacci = [1, 2, 3, 5, 8, 13, 21];
+    for (let i = 0; i < 7; i++) {
+      console.log(fibonacci[i]);
+    }
+    </code></pre>
+      </div>
+    </div>
+    <hr>
+
+    <h3>Length of an Array</h3>
+    <p>The length of an array may be determined using the length property.</p>
+    <pre><code class="lang-js">
+    let numArray = [1, 2, 3, 4, 5, 6, 7, 8];
+    console.log("Length of numArray is: " + numArray.length);
+    </code></pre>
+    <p>The length property is very useful when you want to traverse an array that may change in size or that you don’t
+      know the size of…</p>
+    <pre><code class="lang-js">
+    function printElements(anArray) {
+      // Print elements of anArray to console, one element per line.
+      for (let i = 0; i < anArray.length; i++) {
+        console.log(anArray[i]);
+      }
+    }
+    
+    printElements([1, 2, 3, 4]);
+    printElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    </code></pre>
+    <hr>
+  </div>
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Array Basics - Concept Notes Explanation</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iuundBnyz-c?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>Kung Fu Panda Image Slideshow / Gallery</h3>
+    <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/kf-panda-slideshow-start.git" target="_blank">kf-panda-slideshow-start.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IWWNnfY30lA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr class='divider'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xeexX4a7CYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>Array Visualizer</h3>
+    <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/canvas-animation-template.git" target="_blank">canvas-animation-template.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rgJAosQ6UOA?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+  </div>
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Nickname Generator</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs20-pages/images/nickname-generator-gui.PNG" width="400px">
+      </div>
+      <div class="box2">
+        <h4>Instructions</h4>
+        <p>Create a program where the user will enter their first and last name and then click a button that will generate a random nickname or click a button that will generate a list of ALL possible nicknames.</p>
+
+        <p>Use an array to store all of the possible nicknames.</p>
+      </div>
+    </div>
+  </div>
+
+</div>

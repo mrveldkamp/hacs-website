@@ -1,0 +1,54 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Associative Arrays</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Data Structures - Associative Arrays</h3>
+    <p>An <strong>associative array</strong> is a data structure that has <strong>named indexes</strong> instead of the numerical indexes a regular array uses.</p>
+    <p>An associative array may be described as a collection of <strong>key-value pairs</strong>.</p>
+    <p>In JavaScript, objects behave like associative arrays.</p>
+    <p>Values in the object may be accessed using dot notation or [ ] notation.</p>
+
+    <pre><code class="lang-js">
+    // Object Literal (Associative Array)
+    let student = {name: "Megan", id: 1, grade: 10};
+
+    student.grade = 11; // Access grade property with dot notation
+    student["grade"] = 11; // Access grade property with [ ] notation
+    </code></pre>
+
+    <p>It is also possible to add key-value pairs with dot notation or [ ] notation.</p>
+    <pre><code class="lang-js">
+    student.username = "megan105"; // Add username property with dot notation
+    student["username"] = "megan105"; // Add username property with [ ] notation
+    </code></pre>
+    <hr>
+  </div>
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Associative Arrays Notes Explanation</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pkDYLb3MFJs?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>User Login - Associative Array</h3>
+    <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/associative-arrays-user-login-start.git" target="_blank">associative-arrays-user-login-start.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/chVO1lX8Pzs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+  </div>
+
+</div>

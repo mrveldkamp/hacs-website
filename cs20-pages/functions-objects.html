@@ -1,0 +1,127 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Functions and Objects</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Object Basics</h3>
+    <p>It is common to have many variables that are all related to each other. For example, a circle may have variables
+      for its center (x,y), radius, colour, etc.</p>
+    <p>In JavaScript, it is possible to store related information in a data structure called an <strong>object</strong>:
+      a collection of named values. These named values are called properties of the object.</p>
+    <p>Objects allow the creation of a single variable that can store multiple properties.</p>
+
+    <h4>Create an Object</h4>
+    <p>You can define a JavaScript object with an object literal. Place comma separated name-value pairs inside of { }.
+    </p>
+    <pre><code class="lang-js">
+      // Object (collection of named values)
+      let circle = {x: 300, y: 200, radius: 25, color: 'grey'};
+    </code></pre>
+    <p>To improve readability, it is common to have each property on its own line.</p>
+    <pre><code class="lang-js">
+      // Object (collection of named values)
+      let circle = {
+        x: 300,
+        y: 200,
+        radius: 25,
+        color: 'grey'
+      };
+    </code></pre>
+
+    <h4>Access Object Properties</h4>
+    <p>A common way to access object properties is with <strong>dot notation</strong>.</p>
+    <pre><code class="lang-js">
+      // DRAW CANVAS
+      ctx.fillStyle = circle.color;
+      ctx.beginPath();
+      ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+      ctx.fill();
+    </code></pre>
+    <hr>
+
+    <h3>Functions and Objects</h3>
+    <p>When it comes to functions, one use of objects is to use objects as arguments and return values.
+
+      <h4>Without Objects</h4>
+      <pre><code class="lang-js">
+      // WITHOUT OBJECTS
+      let circleX = 300;
+      let circleY = 200;
+      let circleRadius = 25;
+      let circleColor = 'grey';
+
+      // Invoke Function
+      drawCircle(circleX, circleY, circleRadius, circleColor);
+
+      // Define Function
+      function drawCircle(x, y, radius, color) {
+        ctx.fillStyle = color;
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, 2 * Math.PI);
+        ctx.fill();
+      }
+    </code></pre>
+
+      <h4>With Objects</h4>
+      <pre><code class="lang-js">
+      // WITH OBJECTS
+      let circle = {
+        x: 300,
+        y: 200,
+        radius: 25,
+        color: 'grey'
+      };
+
+      // Invoke Function
+      drawCircle(circle);
+
+      // Define Function
+      function drawCircle(aCircle) {
+        ctx.fillStyle = aCircle.color;
+        ctx.beginPath();
+        ctx.arc(aCircle.x, aCircle.y, aCircle.radius, 0, 2 * Math.PI);
+        ctx.fill();
+      }
+    </code></pre>
+  </div>
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Functions and Bubble Objects</h3>
+    <p>Objects as arguments and return values.</p>
+    <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/functions-objects-bubbles-start.git" target="_blank">functions-objects-bubbles-start.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/a-ZlKDY6gs4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div>
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Functions and Block Objects</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs20-pages/images/block-objects.PNG" alt="Block Objects" width="300">
+      </div>
+      <div class="box2">
+        <p>Use functions and objects to make given code more organized and efficient.</p>
+        <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/functions-objects-blocks-start.git" target="_blank">functions-objects-blocks-start.git</a></p>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+</div>

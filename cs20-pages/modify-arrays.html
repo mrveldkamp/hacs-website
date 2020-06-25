@@ -1,0 +1,137 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Modify Arrays</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Modify Elements</h3>
+    <p>Array elements may be reassigned and modified just like regular variables.</p>
+    <pre><code class="lang-js">
+    let nums = [1, 2, 3, 4, 5, 6];
+    nums[0] = 3; // Assign the 1st element to 3
+    nums[1]++; // Increment the 2nd element by 1
+    nums[2] *= 1; // Multiply the 3rd element by 1
+    nums[3] -= 2; // Decrement the 4th element by 2
+    nums[4] /= 2; // Divide the 5th element by 2
+    </code></pre>
+    <hr>
+
+    <h3>Add & Remove Elements</h3>
+    <p>There are some useful JavaScript array methods that help to add and remove array elements.</p>
+    <p><strong>push()</strong></p>
+    <pre><code class="lang-js">
+    // Add item(s) to the end of the array
+    anArray.push(item1, item2, ...);
+    </code></pre>
+    <p><strong>pop()</strong></p>
+    <pre><code class="lang-js">
+    // Remove last element
+    anArray.pop();
+    
+    // Remove and store last element
+    let lastElement = anArray.pop();
+    </code></pre>
+    <p><strong>unshift()</strong></p>
+    <pre><code class="lang-js">
+    // Add item(s) to the beginning of the array
+    anArray.unshift(item1, item2, ...);
+    </code></pre>
+    <p><strong>shift()</strong></p>
+    <pre><code class="lang-js">
+    // Remove first item
+    anArray.shift();
+    
+    // Remove and store first item
+    let firstElement = anArray.shift();
+    </code></pre>
+    <p><strong>splice()</strong></p>
+    <pre><code class="lang-js">
+    // Add and/or Remove array elements at a specific index
+    anArray.splice(index, howManyToRemove, item1, item2, ...);
+
+    // Remove and store third item
+    let thirdItem = anArray.splice(2, 1);
+
+    // Add item to index 5
+    anArray.splice(5, 0, item);
+    </code></pre>
+  </div>
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Modify Arrays Notes Explanation</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Fh4lmGAijek?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <h3>Modify Array Visualizer</h3>
+    <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/array-visualizer.git" target="_blank">array-visualizer.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfGwDVS0l-s?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div>
+
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Random Dance</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs20-pages/images/random-dance.PNG" width="350px">
+      </div>
+      <div class="box2">
+        <h4>Instructions</h4>
+        <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/array-visualizer.git" target="_blank">array-visualizer.git</a></p>
+        <ul>
+          <li>Initialize <code>myArray</code> to have 15 elements all with the value of 300.</li>
+          <li>When the space key is pressed, add a random decimal between -5 and 5 to all the elements in the array.</li>
+          <li>When the 'r' key is pressed, reset the array so that all elements have the value of 300 again.</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+
+    <h3>Remove Challenge</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs20-pages/images/remove-challenge.PNG" width="350px">
+      </div>
+      <div class="box2">
+        <h4>Instructions</h4>
+        <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/array-visualizer.git" target="_blank">array-visualizer.git</a></p>
+        <ul>
+          <li>Initialize <code>myArray</code> to <code>[400, 200, 200, 400, 200, 200, 200, 400, 200, 200, 200, 200, 400]</code>.</li>
+          <li>When the #1 key is pressed, use a loop to remove all elements that have a value of 400.</li>
+          <li>When the #2 key is pressed, use a loop to remove all elements that have a value of 200.</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+
+    <h3>Student Grades</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs20-pages/images/student-grades.PNG" width="350px">
+      </div>
+      <div class="box2">
+        <h4>Instructions</h4>
+        <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/student-grades-array-visualizer-start.git" target="_blank">student-grades-array-visualizer-start.git</a></p>
+        <p>Implement each of the menu options located in the mainMenu function of the provided Start Code.</p>
+      </div>
+    </div>
+    <hr>
+
+  </div>
+
+</div>

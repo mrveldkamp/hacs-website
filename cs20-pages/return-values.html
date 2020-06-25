@@ -1,0 +1,80 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Return Values</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Return Values</h3>
+    <p>A function may return a value.  Simply use the <strong>return</strong> keyword followed by the value to return.  The return command stops execution of the function and returns the value to where the function was called.</p>
+
+    <pre><code class="lang-js">
+      // Define a random decimal function
+      function randomDec(low, high) {
+        // Return a random decimal between low (inclusive) and high (exclusive)
+        return Math.random() * (high - low) + low;
+      }
+
+      // Invoke function and use return value in various ways
+      let xVal = randomDec(0, 300); // Store returned value in a variable
+      console.log(randomDec(1, 10)); // Pass returned value into console.log
+      let circleArea = Math.PI * randomDec(1, 50) ** 2; // Use returned value in an expression
+    </code></pre>
+    <hr>
+  </div>
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Return Values Notes Explanations</h3>
+    <p>Return Values from a Functions</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oY17bx2vuFI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+  </div>
+  
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Number Analyzer Assignment</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs20-pages/images/number-analyzer.PNG" width="300">
+      </div>
+      <div class="box2">
+        <p>Complete the given program by defining functions as specified.</p>
+        <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/number-analyzer-start.git"
+          target='_blank'>number-analyzer-start.git</a>
+        </p>
+        <p><strong>Instructions:</strong> <a href='https://drive.google.com/open?id=1-mcIVHMMqlQdPjG1sr-8ztZa9F4kHLBQcZprWamRf2Y' target='_blank'>Number Analyzer Instructions</a></p>
+      </div>
+    </div>
+    <hr>
+    
+    <h3>Line Analyzer Assignment</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs20-pages/images/line-analyzer.jpg" width="300">
+      </div>
+      <div class="box2">
+        <p>Complete the given program by defining functions as specified.</p>
+        <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/line-analyzer-start.git"
+          target='_blank'>line-analyzer-start.git</a>
+        </p>
+        <p><strong>Instructions:</strong> <a href='https://drive.google.com/open?id=1on4hkKN-qcejjf3yLeLhlWd39uDu3_-Fp2UasYOgvHI' target='_blank'>Line Analyzer Instructions</a></p>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+</div>

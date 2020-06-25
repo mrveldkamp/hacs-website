@@ -1,0 +1,98 @@
+<!-- Page Style: Hide tabs -->
+<style>
+  .video-lessons,
+  .assignments {
+    display: none;
+  }
+</style>
+
+<!-- Section Heading -->
+<h2>Data Options</h2>
+<div class="tabbed-menu">
+  <div class="active-tab">Concept Notes</div>
+  <div>Video Lessons</div>
+  <div>Assignments</div>
+</div>
+
+<!-- Tabbed Content -->
+<div class="tabbed-content">
+  <!-- Concept Notes -->
+  <div class="concept-notes">
+    <h3>Data Options</h3>
+    <p>Some possible ways of using data structures for data storage include:</p>
+    <ul>
+      <li>Parallel Arrays</li>
+      <li>2D Arrays</li>
+      <li>Arrays of Objects</li>
+    </ul>
+    <hr>
+
+    <h3>Parallel Arrays</h3>
+    <p>The example below uses <strong>parallel arrays</strong> to store the centers of three bubbles.  The data for the first bubble is stored at index 0 of each array, the second bubble is stored at index 1 of each array, and the third bubble is stored at index 2 of each array.</p>
+    <pre><code class="lang-js">
+    // BUBBLE CENTERS WITH PARALLEL ARRAYS
+    let xVals = [200, 400, 600];
+    let yVals = [300, 300, 300];
+
+    // First bubble center at (xVals[0], yVals[0])
+    // Second bubble center at (xVals[1], yVals[1])
+    // Third bubble center at (xVals[2], yVals[2])
+    </code></pre>
+    <hr>
+
+    <h3>2D Arrays</h3>
+    <p>The example below uses a <strong>2D array</strong> to store the centers of three bubbles.  The data for the first bubble is stored in the array located at index 0, the second bubble is stored in the array at index 1, and the third bubble is stored in the array at index 2.</p>
+    <pre><code class="lang-js">
+    // BUBBLE CENTERS WITH 2D ARRAY
+    let bubbles = [ [200, 300], [400, 300], [600, 300] ];
+    
+    // First bubble center at (bubbles[0][0], bubbles[0][1])
+    // Second bubble center at (bubbles[1][0], bubbles[1][1])
+    // Third bubble center at (bubbles[2][0], bubbles[2][1])
+    </code></pre>
+    <hr>
+
+    <h3>Arrays of Objects</h3>
+    <p>The example below uses an <strong>array of objects</strong> to store the centers of three bubbles.  The data for the first bubble is stored in the object located at index 0, the second bubble is stored in the object at index 1, and the third bubble is stored in the object at index 2.</p>
+    <pre><code class="lang-js">
+    // BUBBLE CENTERS WITH ARRAY OF OBJECTS
+    let bubbles = [ {x: 200, y: 300}, {x: 400, y: 300}, {x: 600, y: 300} ];
+    
+    // First bubble center at (bubbles[0].x, bubbles[0].y)
+    // Second bubble center at (bubbles[1].x, bubbles[1].y)
+    // Third bubble center at (bubbles[2].x, bubbles[2].y)
+    </code></pre>
+    <hr>
+  </div>
+
+  <!-- Video Lessons -->
+  <div class="video-lessons">
+    <h3>Bubbles - Data Options</h3>
+    <p><strong>Start Code:</strong> <a href="https://github.com/ha-cs20-course-activities/canvas-animation-template.git" target="_blank">canvas-animation-template.git</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bS4pgmOOcmc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr class="divider">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/f051HwyQu0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr class="divider">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uUbYX6GQPHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+  <!-- Assignments -->
+  <div class="assignments">
+    <h3>Make it Snow</h3>
+    <div class="combo-box">
+      <div class="box1">
+        <img src="cs20-pages/images/make-it-snow-asgn.PNG" width="350px">
+      </div>
+      <div class="box2">
+        <h4>Instructions</h4>
+        <p>Create a program to simulate falling snow.</p>
+        <ul>
+          <li>Each snowflake should have its own location, size and speed.</li>
+          <li>When a snowflake goes off the bottom of the canvas it should teleport to a random location above the canvas.</li>
+          <li>Implement the ability to add and remove snowflakes on mouse or key events.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,112 @@
+
+a.course-home-link {
+    color: white;
+    text-decoration: none;
+}
+
+a.course-home-link:hover {
+    text-decoration: underline;
+}
+
+.project-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 1200px;
+    margin: 0 auto 100px;
+    padding: 20px 50px;
+    border-radius: 25px;
+}
+
+.main-info {
+    width: 700px;
+}
+
+h2 {
+    font-family: 'Economica', sans-serif;
+    font-size: 2rem;
+    font-variant: small-caps;
+    color: #7e3409;
+    letter-spacing: 0.5px;
+}
+
+em {
+    font-size: 0.75rem;
+}
+
+
+ul.check-list {
+    list-style-type: circle;
+}
+
+ul {
+    width: 700px;
+}
+
+li {
+    line-height: 1.5rem;
+}
+
+h3 a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #fb9c1b;
+    border: 1px solid #fb9c1b;
+    font-size: 0.75rem;
+    padding: 1px 5px;
+    color: white;
+    border-radius: 5px;
+    line-height: 0.75rem;
+}
+
+h3 a:hover {
+    background-color: white;
+    color: #fb9c1b;
+}
+
+.side-info {
+    padding-top: 100px;
+}
+
+.create-card {
+    width: 250px;
+    padding: 20px 35px;
+    text-align: center;
+    background-color: #fb9c1b;
+    border-radius: 20px;
+    margin: 50px 0;
+    box-shadow: 2px 2px grey;
+    letter-spacing: 0.75px;
+}
+
+.create-card h3 {
+    font-family: 'Economica', sans-serif;
+    color: #7e3409;
+    margin-top: 5px;
+    font-size: 2rem;
+    /* color: white; */
+    letter-spacing: 1px;
+    font-variant: small-caps;
+}
+
+.create-card img {
+    width: 100px;
+    height: 75px;
+}
+
+.create-card a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-color: #7e3409;
+    border: 1px solid #7e3409;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.create-card a:hover {
+    background-color: white;
+    color: #7e3409;
+}
+
+

@@ -1,0 +1,129 @@
+/* Styles for all course pages */
+
+/* Reset & Presets */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../images/Harry-Ainlay_background-1600x700.png") no-repeat right fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+
+header {
+    padding: 15px 0;
+    border-bottom: 1px solid #CCC;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+a.logo {
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    vertical-align: text-bottom;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #FB9C1B;
+}
+
+nav a.active {
+    color: #FB9C1B;
+}
+
+/* Main Title */
+
+.main-title {
+    padding-bottom: 5px;
+}
+
+.main-title h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 2px;
+    margin: 0.67em 0;
+}
+
+.main-title p {
+    color: white;
+}
+
+/* Page Style */
+
+/* Course Section */
+
+.courses {
+    margin: 40px 0;
+}
+
+h3 {
+    color: #09457e;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-gap: 4em;
+    grid-row-gap: 3em;
+}
+
+.card {
+    display: flex;
+    border: 1px solid #FB9C1B;
+    border-radius: 15px;
+    box-shadow: 2px 2px #FB9C1B;
+    padding: 25px 50px 50px 50px;
+    background-color: white;
+}
+
+.card>img {
+    margin-right: 30px;
+    align-self: center;
+    width: 150px;
+}
+
+.card a {
+    display: block;
+    background-color: #FB9C1B;
+    color: white;
+    text-decoration: none;
+    line-height: 1.5em;
+    border: 2px solid #FB9C1B;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 5px 0;
+    width: 70%;
+}
+
+.card a:hover {
+    background-color: white;
+    color: #FB9C1B;
+}
